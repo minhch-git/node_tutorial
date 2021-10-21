@@ -11,7 +11,7 @@ export MONGODB_URI="mongodb://127.0.0.1:27017/my_node_boilerplate"
 # JWT secret key
 export JWT_SECRET=123123
 # Number of minutes after which an access token expires
-export JWT_ACCESS_EXPIRATION_MINUTES= 30
+export JWT_ACCESS_EXPIRATION_MINUTES=30
 # Number of days after which a refresh token expires
 export JWT_REFRESH_EXPIRATION_DAYS=30
 # Number of minutes after which a reset password token expires

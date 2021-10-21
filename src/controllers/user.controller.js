@@ -20,8 +20,9 @@ class UserCtrl {
    */
   async getUser(req, res) {
     const user = await userService.findById(req.params.userId)
+    console.log(user)
     if (!user) {
-      throw createError.NotFound()
+      throw createError.NotFound('Not found user')
     }
     res.send(user)
   }

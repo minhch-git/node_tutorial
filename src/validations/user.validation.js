@@ -1,5 +1,5 @@
 import { string, number, mixed } from 'yup'
-import { yupObject, custom } from './customValidation'
+import custom from './custom.validation'
 
 const createUser = {
   email: string().required().email(),
@@ -33,9 +33,9 @@ const deleteUser = {
 }
 
 export default {
-  createUser: yupObject(createUser),
-  getUsers: yupObject(getUsers),
-  getUser: yupObject(getUser),
-  updateUser: yupObject(updateUser),
-  deleteUser: yupObject(deleteUser),
+  createUser,
+  getUsers,
+  getUser,
+  updateUser,
+  deleteUser,
 }
